@@ -32,43 +32,23 @@ A full-stack, real-time hostel attendance and management system designed to stre
 
 ### Prerequisites
 - [Node.js](https://nodejs.org/) installed
-- [MongoDB](https://www.mongodb.com/) running locally or a MongoDB Atlas URI
+- [MongoDB](https://www.mongodb.com/) installed and running locally
 
-### 1. Backend Setup
-1. Open a terminal in the root directory.
-2. Install dependencies:
+### Setup
+1. Install dependencies:
    ```bash
    npm install
    ```
-3. Set up the `.env` file in the root with the following variables:
-   ```env
-   PORT=5000
-   MONGO_URI=mongodb://localhost:27017/warden_system
-   JWT_SECRET=your_super_secret_jwt_key
-   EMAIL_USER=your_email@gmail.com
-   EMAIL_PASS=your_app_password
-   ```
-4. Start the backend server:
+2. Start the unified server:
    ```bash
    npm run dev
    ```
-
-### 2. Frontend Setup
-The frontend uses vanilla HTML/JS and CDNs, so it doesn't require complex bundlers to run.
-1. Open a separate terminal.
-2. Navigate to the frontend directory:
-   ```bash
-   cd frontend
-   ```
-3. Serve the frontend (you can use `npx serve` or Live Server):
-   ```bash
-   npx serve
-   ```
-4. Open your browser and navigate to `http://localhost:3000`.
+3. Open your browser and navigate to the local host link:
+   👉 **[http://localhost:5000](http://localhost:5000)**
 
 ### 🔑 Default Credentials
 - **Username:** admin
-- **Password:** admin123
+- **Password:** admin123 (or use warden / password123)
 
 ## 📝 Usage
 1. Log in to the system.
