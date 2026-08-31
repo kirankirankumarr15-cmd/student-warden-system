@@ -214,7 +214,7 @@ function Dashboard() {
     fetchStats();
     fetchRecent();
 
-    const socket = io('http://localhost:5000');
+    const socket = io();
     socket.on('attendanceUpdate', (newRecord) => {
       fetchStats();
       setRecent(prev => [newRecord, ...prev.slice(0, 7)]);
@@ -564,7 +564,7 @@ function AttendanceTable() {
 
   useEffect(() => {
     fetchRecords();
-    const socket = io('http://localhost:5000');
+    const socket = io();
     socket.on('attendanceUpdate', (newRecord) => {
       setRecords(prev => [newRecord, ...prev]);
     });
